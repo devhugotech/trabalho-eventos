@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evento XYZ - Contato</title>
+    <title>Evento Javeiros - Contato</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Evento XYZ</h1>
+        <h1>Evento Javeiros</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -22,27 +22,29 @@
     <main>
         <section id="contato">
             <h2>Entre em Contato</h2>
-            <p>Email: contato@evento.com</p>
-            <p>Telefone: (11) 99999-9999</p>
+            <p><strong>Email:</strong> contato@evento.com</p>
+            <p><strong>Telefone:</strong> (11) 99999-9999</p>
 
-            <img src="mapa.jpg" alt="Mapa do local do evento">
+            <!-- Imagem do mapa -->
+            <img src="mapa.png" alt="Mapa do local do evento">
 
+            <!-- Formulário de contato -->
             <form action="/submit-contato" method="POST">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" required>
 
                 <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="4" required></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit">Enviar Mensagem</button>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Evento XYZ</p>
+        <p>&copy; 2024 Evento Javeiros. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

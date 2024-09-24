@@ -1,0 +1,107 @@
+html, body {
+    height: 100%;  /* Faz com que o HTML e o body ocupem 100% da altura da viewport */
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;  /* Fonte monoespaçada para um visual mais técnico */
+    background-color: #121212;  /* Fundo escuro */
+    color: #ffffff;  /* Texto branco para contraste */
+}
+
+main {
+    flex: 1;  /* Faz o main crescer e ocupar o espaço disponível */
+    padding: 20px;
+    background-color: #1e1e1e;  /* Fundo um pouco mais claro para o conteúdo principal */
+    border: 1px solid #333;  /* Bordas sutis em tom cinza escuro */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);  /* Sombra suave para destacar a seção principal */
+}
+
+header, footer {
+    background-color: #1c1c1c;  /* Fundo do cabeçalho e rodapé em tom cinza escuro */
+    color: #ffffff;  /* Texto branco */
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer {
+    margin-top: auto;  /* Garante que o footer fique no final da página */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ffffff;  /* Links em branco */
+    text-decoration: none;
+    font-weight: bold;  /* Destaca os links de navegação */
+}
+
+nav ul li a.active {
+    text-decoration: underline;  /* Sublinhado para a página ativa */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;  /* Espaço acima da tabela */
+}
+
+table, th, td {
+    border: 1px solid #444;  /* Bordas em tom cinza escuro */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;  /* Cabeçalho em cinza escuro */
+    color: #ffffff;  /* Texto branco no cabeçalho */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;  /* Espaço acima do formulário */
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;  /* Destaca os rótulos do formulário */
+    color: #ffffff;  /* Rótulos em branco para contraste */
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #555;  /* Bordas em tom cinza médio */
+    border-radius: 4px;  /* Bordas arredondadas */
+    background-color: #222;  /* Fundo dos campos em cinza escuro */
+    color: #ffffff;  /* Texto branco nos campos */
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ff9800;  /* Botão em tom laranja vibrante */
+    color: #ffffff;  /* Texto branco no botão */
+    border: none;
+    border-radius: 4px;  /* Bordas arredondadas no botão */
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e68900;  /* Laranja mais escuro ao passar o mouse */
+}
