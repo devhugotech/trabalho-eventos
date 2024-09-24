@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento XYZ - Inscrição</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Evento XYZ</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="palestrantes.html">Palestrantes</a></li>
+                <li><a href="inscricao.html" class="active">Inscrição</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inscricao">
+            <h2>Inscreva-se no Evento</h2>
+            <form action="/submit-inscricao" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="ingresso">Tipo de Ingresso:</label>
+                <select id="ingresso" name="ingresso">
+                    <option value="completo">Completo</option>
+                    <option value="parcial">Parcial</option>
+                </select>
+
+                <button type="submit">Inscrever</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Evento XYZ</p>
+    </footer>
+</body>
+</html>
